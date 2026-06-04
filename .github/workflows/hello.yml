@@ -1,0 +1,24 @@
+name: Hello GitHub Actions
+ 
+on:
+  push:
+    branches:
+      - main
+ 
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - name: Print Hello
+        run: echo "Hello from GitHub Actions!"
+ 
+      - name: Show Date and Time
+        run: date
+ 
+      - name: Show System Info
+        run: |
+          echo "OS: $(uname -s)"
+          echo "User: $(whoami)"
+          echo "Directory: $(pwd)"
+          echo "GitHub Actions is working!"
