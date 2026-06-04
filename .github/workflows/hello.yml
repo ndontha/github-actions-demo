@@ -22,6 +22,5 @@ jobs:
           echo "User: $(whoami)"
           echo "Directory: $(pwd)"
           echo "GitHub Actions is working!"
-          - name: This Will Fail
-        run: exit 1
+          
 
